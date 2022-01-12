@@ -16,6 +16,20 @@ First parameter is number of method to use, second is optional command (executab
 
 **Note**: Since 3.5.0 version all "fixed" methods are considered obsolete and removed altogether with all supporting code/units. If you still need them - use [v3.2.x branch](https://github.com/hfiref0x/UACME/tree/v3.2.x)
 
+
+
+
+How to use naka?
+   - Compile it.
+   - Run it from command line as naka path_to_payload.dll where payload.dll is one of the compiled uacme dlls (fubuki, akatsuki etc), e.g. C:\test\naka.exe C:\test\dll\fubuki64.dll
+   - run naka --stable to generate secrets table which is required by Akagi for AES decryption
+   - Copy result files (they will have same name as input dll but with cd file extension) to Akagi\Bin folder, move secrets files (secrets32.cd and secrets64.cd) here too.
+   - Rebuild Akagi with full recompilation.
+
+
+
+
+
 <details>
   <summary>Keys (click to expand/collapse)</summary>
 
